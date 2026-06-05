@@ -8,7 +8,7 @@ with open("student.txt", "r",encoding="utf-8") as f: #在with内传encoding参�
 
     sum_grade = 0
     passed_count = 0
-    for value in data_dict.values():
+    for value in data_dict.values(): #.values提取字典中所有的值，.keys所有的键，.items所有的键值对
         sum_grade += int(value)
     for temp in data_dict.values():
         if temp >= 60:
